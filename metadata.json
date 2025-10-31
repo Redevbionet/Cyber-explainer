@@ -1,0 +1,5 @@
+{
+  "name": "Cyber Attack Explainer",
+  "description": "An interactive web application that provides an overview of major cyber attacks, their characteristics, and mitigation strategies, based on the provided article.",
+  "requestFramePermissions": []
+}

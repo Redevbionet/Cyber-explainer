@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Attack Explainer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px; /* Offset for sticky header */
+      }
+      body {
+        font-family: 'Sarabun', sans-serif;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+      .attack-card {
+        opacity: 0; /* Set initial state for animation */
+        animation: fadeInUp 0.5s ease-out forwards;
+      }
+      /* Staggered animation delays */
+      .attack-card:nth-child(1) { animation-delay: 0ms; }
+      .attack-card:nth-child(2) { animation-delay: 100ms; }
+      .attack-card:nth-child(3) { animation-delay: 200ms; }
+      .attack-card:nth-child(4) { animation-delay: 300ms; }
+      .attack-card:nth-child(5) { animation-delay: 400ms; }
+      .attack-card:nth-child(6) { animation-delay: 500ms; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
