@@ -10,8 +10,7 @@ const Header: React.FC = () => {
     { href: '#threats', text: 'รูปแบบภัยคุกคาม' },
     { href: '#advisor', text: 'ที่ปรึกษาด้านการป้องกัน' },
     { href: '#threat-briefing', text: 'สรุปภัยคุกคาม' },
-    { href: '#threat-briefing', text: 'สรุปภัยคุกคาม' },
-
+    { href: '#vulnerability-disclosure', text: 'นโยบายเปิดเผยช่องโหว่' },
   ];
 
   const handleLinkClick = () => {
